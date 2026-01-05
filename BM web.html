@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowens-Martin & Associates, LLC. – Exceptional Clean</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Playfair, Garamond, serif;
+            background: linear-gradient(to bottom, #006994, #89CFF0);
+            color: white;
+        }
+
+/* Header */
+
+/* Base: top-right, over content */
+.site-header .logo {
+  position: fixed;          /* stays visible while scrolling */
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 12px;            /* space from edges */
+  display: inline-block;
+}
+
+/* Make the image responsive */
+.site-header .logo img {
+  height: clamp(28px, 6vw, 48px);  /* scales with viewport, bounded */
+  width: auto;
+}
+
+/* Respect iOS notch/safe areas */
+@supports(padding: max(0px)) {
+  .site-header .logo {
+    padding-top: max(12px, env(safe-area-inset-top));
+    padding-right: max(12px, env(safe-area-inset-right));
+  }
+}
+
+/* Mobile tweaks: more padding and (optional) slightly smaller */
+@media (max-width: 600px) {
+  .site-header .logo {
+    padding: 10px; /* will be overridden by safe-area block if supported */
+  }
+  .site-header .logo img {
+    height: clamp(24px, 7vw, 40px);
+  }
+}
+
+        header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            height: 150px; /* adjust as needed */
+            width: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: left;
+            padding: 120px 40px 60px;
+            max-width: 700px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.15);
+            margin: 40px;
+            border-radius: 12px;
+        }
+
+        .services h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .service-item {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px;
+            text-align: left;
+        }
+
+        .contact p {
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Logo -->
+    <header>
+        <img src="BMlogo2.png" alt="Bowens & Martin Logo" class="logo">
+        <br><p><h1>Bowens-Martin & Associates, LLC.</h1></p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Exceptional Clean</h2>
+        <p>We provide top‑tier commercial and residential cleaning services designed to keep your environment spotless, healthy, and welcoming.</p>
+    </section>
+
+    <!-- Services Section -->
+
+
+
+<section class="services">
+  <h3>Our Services</h3>
+  <div class="service-list">
+    <div class="service-item">
+      <span class="icon">🧹</span>
+      <strong>Commercial Cleaning</strong>
+      <p>Professional cleaning for offices, retail spaces, and business environments—dusting, floor care, restroom sanitation, and trash removal for a spotless workplace.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🏠</span>
+      <strong>Residential Cleaning</strong>
+      <p>Comprehensive home cleaning including kitchens, bathrooms, living areas, and high-touch surfaces for a fresh, comfortable living space.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🌱</span>
+      <strong>Environmental Consultations</strong>
+      <p>Expert advice on sustainable cleaning practices, eco-friendly products, and reducing environmental impact without compromising quality.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🌳</span>
+      <strong>Residential Landscaping</strong>
+      <p>Lawn care, pruning, seasonal cleanups, and curb-appeal improvements tailored to your property.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🧴</span>
+      <strong>Sanitization &amp; Disinfection</strong>
+      <p>Targeted sanitization for high-touch areas and facility-wide disinfection protocols for safer shared spaces.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">📹</span>
+      <strong>Security Camera Installation</strong>
+      <p>Setup and placement for entryways, perimeters, and interiors to enhance visibility and peace of mind.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🧽</span>
+      <strong>Carpet Cleaning</strong>
+      <p>Deep cleaning and stain treatment to refresh fibers, improve air quality, and extend carpet life.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🛠️</span>
+      <strong>Dry Wall Repair</strong>
+      <p>Patch, sand, and finish repairs for dents, holes, and cracks—ready for paint.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🪟</span>
+      <strong>Lower Level Window Cleaning</strong>
+      <p>Streak-free interior and exterior window cleaning for ground-level access areas.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🗑️</span>
+      <strong>Trash Out</strong>
+      <p>Move-out and turnover clearing—removal of debris, bagging, and haul-away coordination.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">📦</span>
+      <strong>Make-Ready/Move-in</strong>
+      <p>Top-to-bottom cleaning and touch-ups to prepare spaces for new occupants.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🪵</span>
+      <strong>Commercial &amp; Residential Flooring</strong>
+      <p>Floor care services including sweep, scrub, polish, and finish for hard surfaces and vinyl.</p>
+    </div>
+
+    <div class="service-item">
+      <span class="icon">🚚</span>
+      <strong>Medical Courier</strong>
+      <p>Timely, secure delivery services with chain-of-custody considerations for healthcare partners.</p>
+    </div>
+  </div>
+</section>
+
+
+``
+
+
+    <!-- Contact Section -->
+    
+<section class="contact">
+  <h3>Contact Us</h3>
+  <p><strong>Phone:</strong> (913) 601-5577</p>
+  <p><strong>Email:</strong> 
+    <a href="mailto:Bowensmartinllc@gmail.com" class="email-link">
+      Bowensmartinllc@gmail.com
+    </a>
+  </p>
+  <p>Let us help you maintain a clean, fresh, and healthy space every day.</p>
+</section>
+
+<!-- ===== Contact Section ===== -->
+
+<section id="contact" class="contact">
+  <h3>Contact Us</h3>
+  <p>We’d love to hear from you! Fill out the form below and we’ll respond promptly.</p>
+
+  <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <input type="hidden" name="form_name" value="Bowens-Martin Contact">
+
+    <div class="form-field">
+      <input type="text" name="name" placeholder="Full Name *" required>
+    </div>
+
+    <div class="form-field">
+      <input type="email" name="email" placeholder="Email Address *" required>
+    </div>
+
+    <div class="form-field">
+      <input type="tel" name="phone" placeholder="Phone (optional)">
+    </div>
+
+    <div class="form-field">
+      <select name="service" required>
+        <option value="">Select a Service *</option>
+        <option>Commercial Cleaning</option>
+        <option>Residential Cleaning</option>
+        <option>Environmental Consultations</option>
+        <option>Residential Landscaping</option>
+        <option>Sanitization & Disinfection</option>
+        <option>Security Camera Installation</option>
+        <option>Carpet Cleaning</option>
+        <option>Dry Wall Repair</option>
+        <option>Lower Level Window Cleaning</option>
+        <option>Trash Out</option>
+        <option>Make-Ready/Move-in</option>
+        <option>Commercial & Residential Flooring</option>
+        <option>Medical Courier</option>
+      </select>
+    </div>
+
+    <div class="form-field">
+      <textarea name="message" rows="4" placeholder="Your Message *" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Message</button>
+  </form>
+</section>
+``
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Bowens-Martin & Associates, LLC. All rights reserved.
+    </footer>   
